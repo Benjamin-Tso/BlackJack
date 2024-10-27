@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+    background: url("images/table.png");
+    background-size: cover;
+    color: coral;
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+}
+.container {
+    border: 4px solid black;
+    border-radius: 8px;
+    margin: 10px;
+    max-width: 50vw;
+    transform: translateX(50%);
+    background-color: rgb(255, 255, 255, 0.1);
+}
+h1 {
+    color: goldenrod;
+}
+
+img {
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+button{
+    margin-top: 10px;
+    background-color: khaki;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    width: 150px;
+}

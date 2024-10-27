@@ -1,0 +1,29 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Blackjack</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>BlackJack</h1>
+            <h2 id="message-el">Want to play a round?</h2>
+        </div>
+        <div class="container">
+            <p >Your Cards:</p>
+            <div id="cards-el"></div>
+            <p>Your Sum: <span id="sum-el"></span></p>
+        </div>
+        <div class="container">
+            <p>Dealer's Cards:</p>
+            <div id="dealer-el"></div>
+            <p>Dealer's Sum: <span id="dealer-sum-el"></span></p>
+        </div>
+        <div class="container">
+            <button onclick="startGame()" id="start-game-btn">Start Game</button>
+            <button onclick="newCard()" id="new-card-btn">Hit</button>
+            <button onclick="stand()" id="stand-btn">Stand</button>
+            <p id="win-record-el">Record: </p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
