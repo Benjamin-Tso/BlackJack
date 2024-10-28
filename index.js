@@ -100,6 +100,7 @@ function dealerTurn(){
                 let isTie = dealerSum === playerSum
                 if(isTie){
                     message = tieMessage
+                    messageEl.style.color = "coral"
                 }
                 else{
                     if(isWin){
