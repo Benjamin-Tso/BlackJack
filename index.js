@@ -156,6 +156,7 @@ function startGame(){
     messageEl.innerText = "Want to play a round?"
     playerCards.push(getRandomCard())
     playerCards.push(getRandomCard())
+    messageEl.style.color = "coral"
     renderGame()
 }
 function buttonStatus(){
