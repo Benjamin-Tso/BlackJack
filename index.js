@@ -30,11 +30,11 @@ winRecordEl.innerText = `Wins: ${winRecord[0]}, Losses: ${winRecord[1]}, Win Per
 function getWinRecord(){
     let temp = localStorage.getItem("win-record")
     console.log(temp)
-    if(temp){
-        return JSON.parse(temp)
+    if(temp === undefined || temp === null){
+        return [0,0]
     }
     else{
-        return [0,0]
+        return JSON.parse(temp)
     }
 }
 function cardsSum(card_arr){
