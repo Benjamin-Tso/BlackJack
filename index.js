@@ -73,7 +73,7 @@ function statusCheck(){
             winRecord[1]++
         }
         localStorage.setItem("win-record", JSON.stringify(winRecord))
-        winRecordEl.innerText = `Wins: ${winRecord[0]}, Losses: ${winRecord[1]}, Win Percentage: ${(Math.floor(winRecord[0]/(winRecord[0]+winRecord[1]) * 100))}%`
+        winRecordEl.innerText = `Wins: ${winRecord[0]}, Losses: ${winRecord[1]}, Win Percentage: ${(~~Math.floor(winRecord[0]/(winRecord[0]+winRecord[1]) * 100))}%`
     }
     buttonStatus()
 }
